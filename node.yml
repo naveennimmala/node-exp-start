@@ -3,6 +3,6 @@
   user: root
   tasks:
     - name: kill
-      command: killall node_exporter
+      shell: killall node_exporter
     - name: bringing up the application
-      command: chdir=/home/ubuntu/node/node_exporter-0.18.1.linux-amd64 ./node_exporter &
+      shell: chdir=/home/ubuntu/node/node_exporter-0.18.1.linux-amd64 ./node_exporter &
