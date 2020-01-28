@@ -2,7 +2,5 @@
   hosts: '*'
   user: root
   tasks:
-    - name: kill if already process is running
-      shell: killall node_exporter
     - name: bringing up the application
       shell: chdir=/home/ubuntu/node/node_exporter-0.18.1.linux-amd64 ./node_exporter &
