@@ -4,5 +4,6 @@
   tasks:
     - name: kill
       shell: killall node_exporter
+      ignore_errors: yes
     - name: bringing up the application
       shell: chdir=/home/ubuntu/node/node_exporter-0.18.1.linux-amd64 ./node_exporter &
