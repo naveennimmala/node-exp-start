@@ -1,5 +1,5 @@
 - name: node start
-  hosts: '*'
+  hosts: all
   user: root
   tasks:
     - name: bringing up the application
