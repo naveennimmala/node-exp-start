@@ -1,5 +1,5 @@
 - name: node start
-  hosts: all
+  hosts: "djangoServer,elkserver"
   user: root
   tasks:
     - name: kill
